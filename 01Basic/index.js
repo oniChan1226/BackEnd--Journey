@@ -2,9 +2,9 @@ console.log("Hello")
 
 require('dotenv').config();
 
-const express = require('express')
+// const express = require('express')
 // Both are same
-// import express from "express"
+import express from "express"
 
 const app = express()
 const port = 3000
@@ -22,5 +22,5 @@ app.get('/login', (req, res) => {
 })
 
 app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${process.env.PORT}`)
 })
